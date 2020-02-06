@@ -1,0 +1,70 @@
+@media screen and (max-width: 900px) and (min-width: 380px) {
+	.price {
+		font-size: 5vw;
+	}
+
+	.pricing {
+		font-size: 3.5vw;
+	}
+
+	.card {
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.container {
+		background-color: #f7f7ff;
+	}
+
+	.title, .cardWrap {
+		z-index: 2;
+	}
+
+	.title {
+		margin-bottom: 2rem;
+	}
+
+	.cardWrap {
+		flex-wrap: wrap;
+	}
+
+	.card {
+		margin: 0.5rem 1.5rem;
+		width: 100%;		
+	}
+
+	.card h4 {
+		margin: 0;
+	}
+
+	.price {
+		font-size: 20vw;
+	}
+
+	.pricing {
+		font-size: 10vw;
+	}
+
+	.pro {
+		height: 60vh;
+	}
+
+	.bg-bot {
+		display: none;
+	}
+
+	.bg-top {
+		transform: translate(50vw, -5vh);
+		z-index: 1;
+	}
+
+	.attribution {
+		padding: 2.5rem;
+	}
+
+	.background {
+		display: none;
+	}
+}
+

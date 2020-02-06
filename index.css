@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	--Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+	--Light-Grayish-Blue: hsl(234, 14%, 74%);
+	--Grayish-Blue: hsl(233, 13%, 49%);
+	--Dark-Grayish-Blue: hsl(232, 13%, 33%);
+	overflow-x: hidden
+}
+
+a {
+	text-decoration: none;
+	color: var(--text);
+}
+
+.container {
+	min-height: 100vh;
+	width: 100vw;
+	max-width: 1440px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--Dark-Grayish-Blue);
+}
+
+.title h1 {
+	margin: 1rem;
+	font-size: 2.5rem;
+}
+
+.switchWrap span {
+	font-size: 1.25rem;
+	color: var(--Light-Grayish-Blue);
+}
+
+.switchWrap {
+	display: flex;
+	align-items: center;
+}
+
+.switch {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 3.5rem;
+	height: 2rem;
+	margin: 1rem;
+	border-radius: 20px;
+	background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.switchBtn {
+	width: 1.6rem;
+	height: 1.6rem;
+	margin: 0 0.2rem;
+	background-color: white;
+	border-radius: 100%;
+	transition: 0.3s;
+}
+
+.switchAnim {
+	transform: translateX(-1.55rem);
+}
+
+@media screen and (max-width: 375px) {
+	.switchAnim {
+		transform: translateX(-1.5rem);
+	}	
+}
+
+.cardWrap {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 2rem;
+}
+
+.card {
+	height: 60vh;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--Dark-Grayish-Blue);
+	background-color: white;
+	border-radius: 15px;
+	padding: 2.5rem;
+	margin: 1rem 0;
+	--border-color: hsla(232, 13%, 33%,0.2);
+}
+
+.card h4 {
+	font-size: 1.5rem;
+	margin: 2rem 0 -2rem 0;
+}
+
+.pro {
+	height: 65vh;
+	background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+	color: white;
+	--border-color: rgba(255,255,255,0.4);
+}
+
+.pricing {
+	font-size: 3.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.price {
+	font-size: 6rem;
+}
+
+.cardTable {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cardTable span {
+	font-size: 1.25rem;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 1rem;
+	border-top: 1px solid var(--border-color);
+}
+
+.cardTable span:last-child {
+	border-bottom: 1px solid var(--border-color);
+}
+
+.card a {
+	width: 100%;
+	max-height: 3rem;
+	padding: 1rem;
+	color: white;
+	border-radius: 7.5px;
+	background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pro a {
+	color: hsl(237, 63%, 64%);
+	background: white;
+}
+
+.card a:hover {
+	color: hsl(237, 63%, 64%);
+	background: transparent;
+	border: 1px solid var(--Grayish-Blue);
+}
+
+.pro a:hover {
+	color: white;
+	border: 1px solid white;
+}
+
+.attribution {
+	width: 100%;
+	text-align: center;
+	margin: 1rem;
+	color: var(--Dark-Grayish-Blue);
+}
+
+.attribution a {
+	color: hsl(237, 63%, 64%);
+	text-decoration: underline;
+}
+
+.bg-top {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.bg-bot {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.background {
+	top: 0;
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	z-index: -2;
+	background-color: #f7f7ff;
+}
